@@ -15,5 +15,4 @@ capabilities:
         - WRITE
       scope:
         datasetScope:
-          ids:
-            - '{{ icapi_ds_external_id }}'
+          ids: [{{ icapi_ds_external_id }}]

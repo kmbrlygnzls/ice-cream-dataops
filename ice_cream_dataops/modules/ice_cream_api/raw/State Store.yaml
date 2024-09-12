@@ -1,2 +1,2 @@
-- dbName: ice_cream_api
+- dbName: State Store
   tableName: icapi_datapoints_extractor
