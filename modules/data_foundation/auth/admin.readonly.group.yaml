@@ -1,5 +1,5 @@
-name: 'data_developer'
-sourceId: '{{data_developer_source_id}}'
+name: 'gp_admin_readonly'
+sourceId: '{{readonly_source_id}}'
 metadata:
   origin: 'cdf-project-templates'
 capabilities:
@@ -9,29 +9,31 @@ capabilities:
         - READ
       scope:
         all: {}
+  - groupsAcl:
+      actions:
+        - LIST
+        - READ
+      scope:
+        all: {}
   - assetsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - filesAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - rawAcl:
       actions:
         - READ
-        - WRITE
         - LIST
       scope:
         all: {}
   - timeSeriesAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - dataModelsAcl:
@@ -43,77 +45,100 @@ capabilities:
   - dataModelInstancesAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - datasetsAcl:
       actions:
         - READ
-        - WRITE
-        - OWNER
       scope:
         all: {}
   - extractionPipelinesAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - extractionRunsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - extractionConfigsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - functionsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - sessionsAcl:
       actions:
         - LIST
-        - CREATE
-        - DELETE
       scope:
         all: {}
   - transformationsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
-  - workflowOrchestrationAcl:
+  - filePipelinesAcl:
       actions:
         - READ
-        - WRITE
+      scope:
+        all: {}
+  - annotationsAcl:
+      actions:
+        - READ
+      scope:
+        all: {}
+  - documentFeedbackAcl:
+      actions:
+        - READ
       scope:
         all: {}
   - securityCategoriesAcl:
       actions:
         - LIST
-        - MEMBEROF
-        - DELETE
-        - CREATE
-        - UPDATE
       scope:
-        all: { }
+        all: {}
+  - hostedExtractorsAcl:
+      actions:
+        - READ
+      scope:
+        all: {}
+  - visionModelAcl:
+      actions:
+        - READ
+      scope:
+        all: {}
+  - roboticsAcl:
+      actions:
+        - READ
+      scope:
+        all: {}
+  - geospatialAcl:
+      actions:
+        - READ
+      scope:
+        all: {}
+  - workflowOrchestrationAcl:
+      actions:
+        - READ
+      scope:
+        all: {}
+  - securityCategoriesAcl:
+      actions:
+        - LIST
+      scope:
+        all: {}
   - timeSeriesSubscriptionsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
   - labelsAcl:
       actions:
         - READ
-        - WRITE
       scope:
         all: {}
